@@ -3,7 +3,7 @@ class Song {
 
     getElement = () => document.getElementsByClassName('container')[0];
 
-    getJsonData = () => fetch('../data/music.json').then(response => response.json()).then(data => data);
+    getJsonData = () => fetch('https://attmme.github.io/clone-lastfm/data/music.json').then(response => response.json()).then(data => data);
 
     setElementData = (element, contingut) => element.innerHTML += contingut;
 
@@ -132,4 +132,4 @@ const loadSongs = (buttonClass) => {
     window.onload = init();
 }
 
-loadSongs();
+loadSongs();    
