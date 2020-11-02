@@ -7,12 +7,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>clon-last.fm</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header>
+        <img src="https://www.last.fm/static/images/logo_static_mob.0798d7258e3d.png" alt="logo">
+    </header>
 
-    <script src="script.js"></script>
+    <!-- NAV -->
+    <nav>
+        <div class="images">
+            <div class="rock" onClick="loadSongs(this.className);">
+                <button class="botons rock">rock</button>
+            </div>
+
+            <div class="hip-hop" onClick="loadSongs(this.className);">
+                <button class="botons hip-hop">hip-hop</button>
+            </div>
+
+            <div class="indie" onClick="loadSongs(this.className);">
+                <button class="botons indie">indie</button>
+            </div>
+
+            <div class="jazz" onClick="loadSongs(this.className);">
+                <button class="botons jazz">jazz</button>
+            </div>
+
+            <div class="reggae" onClick="loadSongs(this.className);">
+                <button class="botons reggae">reggae</button>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="overview" onClick="loadSongs(this.className);">Overview</button>
+            <button class="topten" onClick="loadSongs(this.className);">Top 10 Listened</button>
+            <button class="biggest" onClick="loadSongs(this.className);">The Biggest</button>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <h1 id="titol">Overview</h1>
+        <ul class="container"></ul>
+    </main>
+
+    <script src="js/script.js"></script>
 
 </body>
 
