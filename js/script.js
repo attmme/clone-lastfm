@@ -132,4 +132,4 @@ const loadSongs = (buttonClass) => {
     window.onload = init();
 }
 
-loadSongs();    
+loadSongs();
